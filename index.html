@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One Bird, Two Ways of Seeing</title>
+<meta name="description" content="A small study of birds and the ways we look at them.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<section class="intro">
+<h1>One bird.<br><em>Two ways of seeing.</em></h1>
+<p>The flight stays the same. Change the question you bring to it.</p>
+</section>
+
+<section id="experiment" aria-label="Flight study">
+<div class="controls" role="group" aria-label="Choose a way of seeing">
+<button data-mode="observe" aria-pressed="true" aria-controls="flight q mode-note">Observe</button>
+<button data-mode="messenger" aria-pressed="false" aria-controls="flight q mode-note">Messenger</button>
+<button data-mode="motion" aria-pressed="false" aria-controls="flight q mode-note">Motion</button>
+<button id="context" aria-pressed="false" aria-controls="flight">Show environment</button>
+</div>
+<div class="stage">
+<canvas id="flight" role="img" aria-label="One imagined bird in flight. Choose Messenger for a symbolic sight line or Motion for recorded positions."></canvas>
+<div class="question" aria-live="polite"><span id="q">What do you see?</span></div>
+</div>
+<div class="playback">
+<button id="pause">Pause</button><button id="reset">Replay</button>
+<label id="sample-control" hidden>Recorded positions <input id="samples" type="range" min="4" max="12" value="8" aria-describedby="sampling-help"><output id="count" for="samples">8</output></label>
+</div>
+<p id="mode-note" class="note">Start with the movement itself. What makes you want to explain it?</p>
+<p id="sampling-help" class="small">An illustrative animation, not measured animal behaviour.</p>
+</section>
+
+<section id="process">
+<h2>Sketches</h2>
+<div class="sketches">
+<a href="assets/sketch-1.jpg" target="_blank" rel="noopener" aria-label="Open the first sketch"><div class="photo"><img src="assets/sketch-1.jpg" alt="First sketch of an observer and a bird."></div></a>
+<a href="assets/sketch-2.jpg" target="_blank" rel="noopener" aria-label="Open the second sketch"><div class="photo"><img src="assets/sketch-2.jpg" alt="Sketch with sight lines and numbered flight positions."></div></a>
+<a href="assets/sketch-3.jpg" target="_blank" rel="noopener" aria-label="Open the third sketch"><div class="photo"><img src="assets/sketch-3.jpg" alt="Sketch with two questions about the same flight."></div></a>
+</div>
+</section>
+
+<section id="reflection">
+<h2>Reflection</h2>
+<article>
+<p>After the discussion of birds and technology, one question stayed with me: when we use equipment to record a bird in flight, what do we actually see? Marey's breakdown of movement, discussed in class, offers a starting point. Dividing flight into successive images makes rapid wing movements available for close comparison. It also asks us to attend to particular features of a living event.</p>
+<p>The limitation arises when this partial view is treated as a complete explanation. A clear trajectory can show where a bird turned without establishing why it turned. Wind, surrounding conditions or a search for food might matter. These are possibilities to investigate, rather than causes that can be read directly from a line. Data is valuable, but its value depends on matching the evidence to the question.</p>
+<p>Ryan's account of bird divination introduces a different purpose for looking. In the belief described in class, divine beings were associated with an unseen sky. Birds could enter that space and were understood as messengers between human and divine worlds. Their significance was connected to their ability to fly and to the meanings people attached to the sky.</p>
+<p>Placing this beside motion analysis makes the role of interpretation more visible. One observer seeks a divine message; another studies the organisation of movement. The comparison concerns how purposes direct attention. It does not make divination and scientific measurement equivalent ways of establishing knowledge: their explanations depend on different methods and grounds for belief.</p>
+<p>The interactive study turns this question back towards the viewer. Switching lenses leaves the flight unchanged, while the sight line, sampled poses and accompanying question alter what becomes prominent. Changing the sample count also reveals a decision hidden inside the record. More positions can describe more of a movement, but they cannot establish a motive on their own.</p>
+<p>The environment control complicates the image further. Removing a setting makes the movement easier to isolate. Restoring it encourages connections, yet those connections still need evidence. This creates a useful tension: an isolated record can omit relevant relationships, while a richly contextual image can tempt us to invent them.</p>
+<p>The work has its own limits. Its bird follows a designed path, its setting is illustrative, and its observer is a contemporary figure rather than a reconstruction of an ancient diviner. A button cannot reproduce a belief system or a scientific practice. These choices make a question accessible while simplifying the histories behind it. The work therefore invites a more careful claim: seeing one aspect clearly can deepen understanding, provided the boundaries of that view remain visible.</p>
+</article>
+</section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
